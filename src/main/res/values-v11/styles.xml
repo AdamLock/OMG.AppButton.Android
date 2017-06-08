@@ -1,0 +1,44 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="optimiseButton">
+        <attr name="label" format="string" />
+        <attr name="labelStyle" format="reference" />
+        <attr name="buttonTextColor" format="integer|color" />
+        <attr name="buttonTextSize" format="dimension|reference" />
+        <attr name="buttonFont" format="reference" />
+        <attr name="buttonBackGround" format="reference|color" />
+        <attr name="buttonIconDrawable" format="reference" />
+        <attr name="buttonDrawablePadding" format="fraction|dimension" />
+        <attr name="buttonTextStyle" format="string|reference" />
+        <attr name="buttonHeight" format="fraction|integer|dimension"/>
+        <attr name="buttonWidth" format="fraction|integer|dimension"/>
+    </declare-styleable>
+
+
+    <!--Style for dialog-->
+    <style name="Theme_SDK_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_up</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_down</item>
+    </style>
+
+</resources>

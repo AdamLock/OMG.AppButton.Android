@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.optimise.appbutton"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name="com.optimise.appbutton.view.GalleryCard"
+            android:theme="@style/Theme_SDK_Dialog"
+            android:configChanges="orientation|screenLayout|screenSize"/>
+        <activity android:name="com.optimise.appbutton.view.ListCard"
+            android:theme="@style/Theme_SDK_Dialog"
+            android:configChanges="orientation|screenLayout|screenSize"/>
+    </application>
+
+</manifest>
